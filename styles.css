@@ -34,3 +34,12 @@ header {
   margin: 16px;
   border: 2px dashed #ccc;
 }
+
+.demo:hover {
+  cursor: pointer;
+}
+
+.active {
+  border-color: green;
+  /* background: salmon; */
+}
