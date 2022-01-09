@@ -14,23 +14,12 @@
   </head>
   <body>
     <header>
-      <h1>Vue Events</h1>
+      <h1>Vue Dynamic Styling</h1>
     </header>
-    <section id="events">
-      <h2>Events in Action</h2>
-      <button @click="add(5)">Add</button>
-      <button v-on:click.right="reduce(5)">Reduce</button>
-      <p v-once>Initial Counter Value: {{ counter }}</p>
-      <p>Result: {{ counter }}</p>
-      <input type="text" v-model="name" @keyup.enter="confirmInput">
-      <button v-on:click="resetValue">Reset</button>
-      <p>Your name: {{ fullName }}</p>
-      <p>Name using watcher : {{ fullname }}</p>
-      <p>Your name on pressing 'enter' {{ confirmedName }}</p>
-      <form v-on:submit.prevent="submitForm">
-        <input type="text">
-        <button>Sign Up</button>
-      </form>
+    <section id="styling">
+      <div class="demo"></div>
+      <div class="demo"></div>
+      <div class="demo"></div>
     </section>
   </body>
 </html>
