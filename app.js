@@ -3,8 +3,19 @@ const app = Vue.createApp({
     return {
       counter: 0,
       name: '',
-      confirmedName: ''
+      confirmedName: '',
+      fullname: ''
     };
+  },
+  watch: {
+    name(value) {
+      this.fullname = value + ' ' + 'Raja'
+    },
+    counter(value) {
+      if(value > 50 || value < -50) {
+        this.counter = 0;
+      }
+    }
   },
   computed: {
     fullName() {
