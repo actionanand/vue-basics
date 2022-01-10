@@ -24,6 +24,12 @@
       <ul v-else>
         <li v-for="(goal, idx) in goals">{{ goal }} - {{ idx + 1 }}</li>
       </ul>
+      <ul v-if="goals.length === 0">
+        <li v-for="num in 5">{{ num }}</li>
+      </ul>
+      <ul v-if="goals.length === 0">
+        <li v-for="(value, key, idx) in personalData">{{ key }} : {{ value }} - {{ idx + 1 }}</li>
+      </ul>
     </section>
   </body>
 </html>
